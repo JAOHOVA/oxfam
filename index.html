@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>oxfarm</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5 logo" href="index.html">
+                    <img src="images/OxfamLogo2017.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav justify-content-between nav-liens">
+                        <li class="lien-deroulant">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                Qui sommes-nous?
+                            </a>
+                            <div class="sous-menu">
+                                <ul class="liens">
+                                    <li class="lien">
+                                        <a href="missions/mission.html">Nos Missions</a>
+                                    </li>
+                                    <li class="lien">
+                                        <a href="histoire/histoire.html">Notre histoire</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Nos campagnes</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Agir</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Veuillez choisir le lien qui vous intéresse
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="carbone/carbone.html">Carbone</a><br>
+                        <a href="pakistan/pakistan.html">Inondation au Pakistan</a><br>
+                        <a href="agriculture/agriculture.html">Agriculture et sécurité alimentaire</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="9000" c-item>
+                    <img src="images/shutterstock.jpg" class="d-block w-100 c-img" alt="Images1">
+                    <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                        <h1 class="display-1 mt-5 fw-bolder text-capitalize">Les milliardaires du carbone</h1>
+                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">En savoir plus</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="9000" c-item>
+                    <img src="images/pakistan.jpg" class="d-block w-100 c-img" alt="Images2">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="mt-5 fs-3 text-uppercase">à la une, humanitaire et urgences</p>
+                        <p class="display-1 fw-bolder text-capitalize">Au pakistan:Inondations</p>
+                        <!-- Button trigger modal -->
+                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            En savoir plus
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="9000" c-item>
+                    <img src="images/elevage-poulet.jpg" class="d-block w-100 c-img" alt="Images3">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="display-1 mt-5 fw-bolder text-capitalize">Agriculture et sécurité alimentaire</p>
+                        <!-- Button trigger modal -->
+                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            En savoir plus
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section class="row">
+            <h3 class="text-success text-uppercase text-center fw-bold mt-4">Agir avec Oxfam</h3>
+            <div class="row d-flex justify-content-evenly m-5">
+                <div class="col-6 col-md-3 mx-auto">
+                    <img src="images/militer.png" class="img-fluid w-auto" alt="MILITER">
+                    <h4 class="fw-bold mt-2 militer">MILITER</h4>
+                    <p>Portez les combats d’Oxfam<br>
+                        en rejoignant nos groupes<br>
+                        locaux en France</p>
+                </div>
+                <div class="col-6 col-md-3 mx-auto">
+                    <img src="images/marcher.png" class="img-fluid mt-2 w-auto" alt="MARCHER">
+                    <h4 class="fw-bold mt-2 text-success">MARCHER</h4>
+                    <p>Relevez un défi sportif et<br>
+                        solidaire en marchant le<br>
+                        Trailwalker Oxfam</p>
+                </div>
+                <div class="col-6 col-md-3 mx-auto">
+                    <img src="images/engager.png" class="img-fluid w-auto" alt="ENGAGER">
+                    <h4 class="fw-bold mt-2 engage">S'ENGAGER</h4>
+                    <p>Découvrez les multiples<br>
+                        façons de s’engager<br>
+                        aux côtés d’Oxfam</p>
+                </div>
+                <div class="col-6 col-md-3 mx-auto">
+                    <img src="images/donner.png" class="img-fluid w-auto" alt="DONNER">
+                    <h4 class="fw-bold mt-2 text-danger">DONNER</h4>
+                    <p>Aidez-nous à lutter<br>
+                        contre la pauvreté<br>
+                        et les inégalités</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contact</h2>
+        <h2>Mentions légales</h2>
+        <h2>Suivez-nous sur les réseaux sociaux</h2>
+        <a class="footer_facebook" href="https://www.facebook.com/OxfamFrance" target="_blank" rel="noopener"><img
+                src="https://www.oxfamfrance.org/wp-content/uploads/2018/10/footer_picto-facebook.png"
+                alt="picto facebook" title="picto facebook"></a>
+        <a class="footer_twitter" href="https://twitter.com/oxfamfrance" target="_blank" rel="noopener"><img
+                src="https://www.oxfamfrance.org/wp-content/uploads/2018/10/footer_picto-twitter.png"
+                alt="picto twitter" title="picto twitter"></a>
+        <a class="footer_insta" href="https://www.instagram.com/oxfamfrance/" target="_blank" rel="noopener"><img
+                src="https://www.oxfamfrance.org/wp-content/uploads/2021/10/footer_picto-instagram.png"
+                alt="picto instagram" title="picto instagram"></a>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
