@@ -126,14 +126,9 @@ footer h2 {
         font-size: 16px;
     }
 
-    main img {
+    .pic-histoire {
         height: 65vh; 
         /* Pour eviter que l'image se déforme */
-        object-fit: cover;
-    }
-
-    .wrapper section img {
-        height: 60vh;
         object-fit: cover;
     }
 

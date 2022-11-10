@@ -132,7 +132,7 @@ footer h2 {
 
     main img {
         /* 100% de la taille de l'écran */
-        height: 100vh; 
+        height: 85vh; 
         /* Pour eviter que l'image se déforme */
         object-fit: cover;
     }
